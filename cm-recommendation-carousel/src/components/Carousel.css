@@ -1,0 +1,78 @@
+.carousel-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    min-height: 210px;
+}
+
+.carousel-slide {
+    display: none;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 900px;
+    list-style-type: none;
+    text-align: left;
+}
+
+.carousel-card-panel {
+    transition: all .2s ease-in-out;
+    position: relative;
+    height: 283px;
+    width: 224px;
+    padding: 0;
+}
+
+.carousel-card-panel:hover {
+    transform: scale(1.1);
+}
+
+.carousel-card-button {
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.carousel-card-button:hover {
+    transform: scale(1.4);
+}
+
+.carousel-slide-active {
+     display: block;
+ }
+
+.carousel-arrow {
+    position: absolute;
+    top: 50%;
+    display: block;
+    color: white;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.carousel-arrow:focus {
+     outline: 0;
+ }
+
+.carousel-arrow:hover {
+     opacity: .5;
+    transform: scale(1.4);
+
+}
+
+.carousel-arrow-left {
+     left: 32px;
+ }
+
+.carousel-arrow-right {
+     right: 32px;
+
+}
+
+.carousel-modal-button {
+    color: black;
+}
