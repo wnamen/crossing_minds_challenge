@@ -44,7 +44,7 @@ class App extends Component {
 
         if (items.length <= 10) {
             getItems(16 - items.length, this.state.rated, (data) => {
-                this.setState({items: items.concat(data.items), rated: []})
+                this.setState({items: items.concat(data.items)})
             })
         }
     }
